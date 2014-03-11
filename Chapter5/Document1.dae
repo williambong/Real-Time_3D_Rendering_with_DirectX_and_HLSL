@@ -9,7 +9,7 @@
 		</contributor>
 		<created>2014-03-10T18:19:43Z</created>
 		<keywords>FXComposer, NVIDIA</keywords>
-		<modified>2014-03-10T23:24:02Z</modified>
+		<modified>2014-03-11T16:45:34Z</modified>
 		<subject/>
 		<title/>
 		<unit/>
@@ -18,7 +18,7 @@
 	<library_visual_scenes>
 		<visual_scene id="DefaultScene" name="DefaultScene">
 			<node id="Node" name="Node" layer="">
-				<matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+				<matrix sid="">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
 				<instance_geometry url="#Sphere" sid="GeometryInstance" name="Sphere">
 					<bind_material>
 						<technique_common>
@@ -161,7 +161,7 @@
 			<instance_effect url="#Effect">
 				<technique_hint platform="PC-D3D10" ref="main10"/>
 				<setparam ref="WorldViewProjection">
-					<float4x4>0.982807 5.81529e-008 2.27503 2.49504e-006 0.359644 2.7194 -0.155365 1.32081e-006 0.908677 -0.142601 -0.392547 5.25555 0.908622 -0.142592 -0.392523 5.25706</float4x4>
+					<float4x4>0.520275 1.29936e-006 2.79741 1.26012e-005 0.790529 2.62718 -0.147027 2.58468e-005 0.940152 -0.292681 -0.174853 12.0904 0.940095 -0.292663 -0.174843 12.092</float4x4>
 				</setparam>
 				<setparam ref="ColorTexture">
 					<surface type="2D">
@@ -178,7 +178,7 @@
 			<init_from>file:///c:/program%20files%20(x86)/nvidia%20corporation/fx%20composer%202.5/media/textures/default_color.dds</init_from>
 		</image>
 		<image id="EarthComposite2" name="EarthComposite2">
-			<init_from>content/EarthComposite.jpg</init_from>
+			<init_from>content/earthcomposite.jpg</init_from>
 		</image>
 	</library_images>
 	<library_geometries>
@@ -929,4 +929,25 @@
 	<scene>
 		<instance_visual_scene url="#DefaultScene"/>
 	</scene>
+	<extra type="orcaware">
+		<technique profile="NVIDIA">
+			<library_visual_models>
+				<visual_model id="Model" name="Quad">
+					<instance_visual_scene url="cache-Quad-6b08d7b6-207d-48c9-8976-544ce7fa5e4e.dae#Scene"/>
+					<visual_style_ref name="VisualStyle" url="#VisualStyle"/>
+				</visual_model>
+			</library_visual_models>
+			<library_visual_styles>
+				<visual_style id="VisualStyle" name="VisualStyle" scene="cache-Quad-6b08d7b6-207d-48c9-8976-544ce7fa5e4e.dae#Scene">
+					<owner ref="Node">
+						<swap_material symbol="obj_file_default_material" target="#Material">
+							<extra type="bind_object">
+								<technique profile="NVIDIA_FXCOMPOSER"/>
+							</extra>
+						</swap_material>
+					</owner>
+				</visual_style>
+			</library_visual_styles>
+		</technique>
+	</extra>
 </COLLADA>
