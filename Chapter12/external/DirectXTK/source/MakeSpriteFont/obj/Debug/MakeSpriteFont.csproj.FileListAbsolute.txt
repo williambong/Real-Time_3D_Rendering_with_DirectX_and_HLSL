@@ -1,0 +1,5 @@
+D:\Development\BitBucket\Graphics Book\Supplemental Material\Visual Studio\external\DirectXTK\source\MakeSpriteFont\bin\Debug\MakeSpriteFont.exe
+D:\Development\BitBucket\Graphics Book\Supplemental Material\Visual Studio\external\DirectXTK\source\MakeSpriteFont\bin\Debug\MakeSpriteFont.pdb
+D:\Development\BitBucket\Graphics Book\Supplemental Material\Visual Studio\external\DirectXTK\source\MakeSpriteFont\obj\Debug\MakeSpriteFont.csprojResolveAssemblyReference.cache
+D:\Development\BitBucket\Graphics Book\Supplemental Material\Visual Studio\external\DirectXTK\source\MakeSpriteFont\obj\Debug\MakeSpriteFont.exe
+D:\Development\BitBucket\Graphics Book\Supplemental Material\Visual Studio\external\DirectXTK\source\MakeSpriteFont\obj\Debug\MakeSpriteFont.pdb
