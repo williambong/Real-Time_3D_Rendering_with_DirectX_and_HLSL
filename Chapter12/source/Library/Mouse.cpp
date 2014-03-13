@@ -67,10 +67,7 @@ namespace Library
             throw GameException("IDIRECTINPUTDEVICE8::SetCooperativeLevel() failed");
         }
 
-        if (FAILED(mDevice->Acquire()))
-        {
-            throw GameException("IDIRECTINPUTDEVICE8::Acquire() failed");
-        }
+		mDevice->Acquire();
     }
 
     void Mouse::Update(const GameTime& gameTime)
