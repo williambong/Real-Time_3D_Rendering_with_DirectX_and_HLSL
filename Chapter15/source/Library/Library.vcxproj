@@ -11,7 +11,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BasicMaterial.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="ColorHelper.h" />
     <ClInclude Include="Common.h" />
@@ -36,14 +35,12 @@
     <ClInclude Include="RTTI.h" />
     <ClInclude Include="ServiceContainer.h" />
     <ClInclude Include="Skybox.h" />
-    <ClInclude Include="SkyboxMaterial.h" />
     <ClInclude Include="Technique.h" />
     <ClInclude Include="Utility.h" />
     <ClInclude Include="Variable.h" />
     <ClInclude Include="VectorHelper.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BasicMaterial.cpp" />
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="ColorHelper.cpp" />
     <ClCompile Include="DrawableGameComponent.cpp" />
@@ -65,8 +62,6 @@
     <ClCompile Include="Pass.cpp" />
     <ClCompile Include="RenderStateHelper.cpp" />
     <ClCompile Include="ServiceContainer.cpp" />
-    <ClCompile Include="Skybox.cpp" />
-    <ClCompile Include="SkyboxMaterial.cpp" />
     <ClCompile Include="Technique.cpp" />
     <ClCompile Include="Utility.cpp" />
     <ClCompile Include="Variable.cpp" />

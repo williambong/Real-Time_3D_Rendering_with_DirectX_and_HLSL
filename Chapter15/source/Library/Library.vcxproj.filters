@@ -45,12 +45,6 @@
     <Filter Include="Source Files\Effects">
       <UniqueIdentifier>{05758df0-6248-4902-8a86-4876b1eaf6a0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Materials">
-      <UniqueIdentifier>{6f5366d0-06fc-4bbe-8150-237575d74da4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Materials">
-      <UniqueIdentifier>{bfeb09e0-5066-4e15-a3df-27b7415570cd}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Mouse.h">
@@ -134,12 +128,6 @@
     <ClInclude Include="Effect.h">
       <Filter>Header Files\Effects</Filter>
     </ClInclude>
-    <ClInclude Include="BasicMaterial.h">
-      <Filter>Header Files\Materials</Filter>
-    </ClInclude>
-    <ClInclude Include="SkyboxMaterial.h">
-      <Filter>Header Files\Materials</Filter>
-    </ClInclude>
     <ClInclude Include="Skybox.h">
       <Filter>Header Files\Misc</Filter>
     </ClInclude>
@@ -219,15 +207,6 @@
     </ClCompile>
     <ClCompile Include="Pass.cpp">
       <Filter>Source Files\Effects</Filter>
-    </ClCompile>
-    <ClCompile Include="BasicMaterial.cpp">
-      <Filter>Source Files\Materials</Filter>
-    </ClCompile>
-    <ClCompile Include="SkyboxMaterial.cpp">
-      <Filter>Source Files\Materials</Filter>
-    </ClCompile>
-    <ClCompile Include="Skybox.cpp">
-      <Filter>Source Files\Misc</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
