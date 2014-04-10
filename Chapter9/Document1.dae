@@ -7,9 +7,9 @@
 			<comments/>
 			<copyright/>
 		</contributor>
-		<created>2014-03-11T15:56:56Z</created>
+		<created>2014-04-10T17:37:09Z</created>
 		<keywords>FXComposer, NVIDIA</keywords>
-		<modified>2014-03-11T18:24:18Z</modified>
+		<modified>2014-04-10T17:39:19Z</modified>
 		<subject/>
 		<title/>
 		<unit/>
@@ -17,19 +17,30 @@
 	</asset>
 	<library_visual_scenes>
 		<visual_scene id="DefaultScene" name="DefaultScene">
-			<node id="Node2" name="Node2" layer="">
-				<matrix>1 0 0 0 0 0.0936241 -0.995608 0.317769 0 0.995608 0.0936241 0 0 0 0 1</matrix>
-				<extra type="orcaware">
-					<technique profile="NVIDIA">
-						<instance_visual_model id="ModelInstance" name="Plane" url="#Model">
-							<instance_visual_style url="#VisualStyle"/>
-						</instance_visual_model>
-					</technique>
-				</extra>
+			<node id="Node" name="Node" layer="">
+				<matrix>1 0 0 0 0 0.476253 -0.879308 0 0 0.879308 0.476253 0 0 0 0 1</matrix>
+				<instance_geometry url="#Plane" sid="GeometryInstance" name="Plane">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="PlaneMaterial" target="#Material">
+								<extra type="bind_object">
+									<technique profile="NVIDIA_FXCOMPOSER">
+										<bind_object object="lightcolor0" target="#Node1" sid="Light"/>
+									</technique>
+								</extra>
+								<extra type="bind_object">
+									<technique profile="NVIDIA_FXCOMPOSER">
+										<bind_object object="directionallight0" target="#Node1" sid="Light"/>
+									</technique>
+								</extra>
+							</instance_material>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
 			</node>
-			<node id="Node4" name="Node4" layer="">
-				<matrix>1 0 0 0 0 1 0 0.431748 0 0 1 1.12409 0 0 0 1</matrix>
-				<instance_light url="#PointLight" sid="Light1" name="PointLight"/>
+			<node id="Node1" name="Node1" layer="">
+				<matrix>0.874983 0 0.484154 0 0 1 0 0.689318 -0.484154 0 0.874983 0.991022 0 0 0 1</matrix>
+				<instance_light url="#DirectionalLight" sid="Light" name="DirectionalLight"/>
 			</node>
 			<extra type="evaluatescene_enables">
 				<technique profile="NVIDIA_FXCOMPOSER"/>
@@ -37,20 +48,17 @@
 		</visual_scene>
 	</library_visual_scenes>
 	<library_images>
-		<image id="Blocks_NORM" name="Blocks_NORM">
-			<init_from>content/blocks_norm.tga</init_from>
-		</image>
-		<image id="Blocks_COLOR_RGB" name="Blocks_COLOR_RGB">
-			<init_from>content/blocks_color_rgb.tga</init_from>
-		</image>
-		<image id="Blocks_DISP" name="Blocks_DISP">
-			<init_from>content/blocks_disp.tga</init_from>
-		</image>
 		<image id="default_color" name="default_color">
 			<init_from>file:///c:/program%20files%20(x86)/nvidia%20corporation/fx%20composer%202.5/media/textures/default_color.dds</init_from>
 		</image>
 		<image id="default_bump_normal" name="default_bump_normal">
 			<init_from>file:///c:/program%20files%20(x86)/nvidia%20corporation/fx%20composer%202.5/media/textures/default_bump_normal.dds</init_from>
+		</image>
+		<image id="Blocks_COLOR_RGB" name="Blocks_COLOR_RGB">
+			<init_from>content/Blocks_COLOR_RGB.tga</init_from>
+		</image>
+		<image id="Blocks_NORM" name="Blocks_NORM">
+			<init_from>content/Blocks_NORM.tga</init_from>
 		</image>
 		<image id="DefaultNormalMap" name="DefaultNormalMap">
 			<init_from>content/DefaultNormalMap.tga</init_from>
@@ -143,25 +151,13 @@
 				</technique>
 			</profile_COMMON>
 		</effect>
-		<effect id="Effect2" name="DisplacementMapping">
-			<profile_COMMON>
-				<technique sid="__fxc_remove_profile_COMMON">
-					<constant/>
-				</technique>
-			</profile_COMMON>
-			<extra type="import">
-				<technique profile="NVIDIA_FXCOMPOSER">
-					<import url="DisplacementMapping.fx" compiler_options="" profile="fx"/>
-				</technique>
-			</extra>
-		</effect>
 	</library_effects>
 	<library_materials>
 		<material id="Material" name="NormalMapping_Material">
 			<instance_effect url="#Effect">
 				<technique_hint platform="PC-D3D10" ref="main10"/>
 				<setparam ref="AmbientColor">
-					<float4>1 1 1 0.2</float4>
+					<float4>1 1 1 1</float4>
 				</setparam>
 				<setparam ref="LightColor">
 					<float4>1 1 1 1</float4>
@@ -179,16 +175,16 @@
 					<float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
 				</setparam>
 				<setparam ref="SpecularColor">
-					<float4>1 1 1 0.2</float4>
+					<float4>1 1 1 1</float4>
 				</setparam>
 				<setparam ref="SpecularPower">
-					<float>144</float>
+					<float>25</float>
 				</setparam>
 				<setparam ref="ColorTexture">
 					<surface type="2D">
 						<init_from>Blocks_COLOR_RGB</init_from>
 						<format>R8G8B8</format>
-						<size>1024 512 1</size>
+						<size>2048 2048 1</size>
 					</surface>
 				</setparam>
 				<setparam ref="NormalMap">
@@ -204,6 +200,9 @@
 			<instance_effect url="#Effect1">
 				<technique_hint platform="PC-D3D10" ref="CommonProfile"/>
 				<technique_hint platform="PC-D3D" ref="CommonProfile"/>
+				<setparam ref="Script">
+					<float>0.8</float>
+				</setparam>
 				<setparam ref="EmissionColor">
 					<float4>0 0 0 1</float4>
 				</setparam>
@@ -234,58 +233,21 @@
 				<setparam ref="Index_Of_Refraction">
 					<float>1</float>
 				</setparam>
-			</instance_effect>
-		</material>
-		<material id="Material1" name="DisplacementMapping_Material">
-			<instance_effect url="#Effect2">
-				<technique_hint platform="PC-D3D10" ref="main10"/>
-				<setparam ref="AmbientColor">
-					<float4>1 1 1 0.5</float4>
-				</setparam>
-				<setparam ref="LightColor">
-					<float4>1 1 1 1</float4>
-				</setparam>
-				<setparam ref="LightPosition">
-					<float3>2 2 2</float3>
-				</setparam>
-				<setparam ref="LightRadius">
-					<float>10</float>
-				</setparam>
-				<setparam ref="CameraPosition">
-					<float3>0 0 4.74525</float3>
-				</setparam>
-				<setparam ref="WorldViewProjection">
-					<float4x4>2.74748 0 0 0 0 2.74748 0 0 0 0 -1.00006 4.7446 0 0 -1 4.74525</float4x4>
-				</setparam>
-				<setparam ref="World">
-					<float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
-				</setparam>
-				<setparam ref="SpecularColor">
-					<float4>1 1 1 0</float4>
-				</setparam>
-				<setparam ref="SpecularPower">
-					<float>25</float>
-				</setparam>
-				<setparam ref="DisplacementScale">
-					<float>0.89</float>
-				</setparam>
-				<setparam ref="ColorTexture">
-					<surface type="2D">
-						<init_from>Blocks_COLOR_RGB</init_from>
-						<format>R8G8B8</format>
-						<size>1024 512 1</size>
-					</surface>
-				</setparam>
-				<setparam ref="DisplacementMap">
-					<surface type="2D">
-						<init_from>Blocks_DISP</init_from>
-						<format>B8G8R8A8</format>
-						<size>0 0 1</size>
-					</surface>
+				<setparam ref="LightCount">
+					<int>4</int>
 				</setparam>
 			</instance_effect>
 		</material>
 	</library_materials>
+	<library_lights>
+		<light id="DirectionalLight" name="DirectionalLight">
+			<technique_common>
+				<directional>
+					<color>1 1 1</color>
+				</directional>
+			</technique_common>
+		</light>
+	</library_lights>
 	<library_geometries>
 		<geometry id="Plane" name="Plane">
 			<mesh>
@@ -415,43 +377,7 @@
 			</mesh>
 		</geometry>
 	</library_geometries>
-	<library_lights>
-		<light id="PointLight" name="PointLight">
-			<technique_common>
-				<point>
-					<color>1 1 1</color>
-					<constant_attenuation>1</constant_attenuation>
-					<linear_attenuation>0</linear_attenuation>
-					<quadratic_attenuation>0</quadratic_attenuation>
-				</point>
-			</technique_common>
-		</light>
-	</library_lights>
 	<scene>
 		<instance_visual_scene url="#DefaultScene"/>
 	</scene>
-	<extra type="orcaware">
-		<technique profile="NVIDIA">
-			<library_visual_models>
-				<visual_model id="Model" name="Plane">
-					<instance_visual_scene url="cache-Plane-d671fcb7-ff10-42f8-9c59-d865d745f104.dae#Scene"/>
-					<visual_style_ref name="VisualStyle" url="#VisualStyle"/>
-				</visual_model>
-			</library_visual_models>
-			<library_visual_styles>
-				<visual_style id="VisualStyle" name="VisualStyle" scene="cache-Plane-d671fcb7-ff10-42f8-9c59-d865d745f104.dae#Scene">
-					<owner ref="Node">
-						<swap_material symbol="obj_file_default_material" target="#Material1">
-							<extra type="bind_object">
-								<technique profile="NVIDIA_FXCOMPOSER">
-									<bind_object object="lightcolor0" target="Node4" sid="Light1"/>
-									<bind_object object="pointlight0" target="Node4" sid="Light1"/>
-								</technique>
-							</extra>
-						</swap_material>
-					</owner>
-				</visual_style>
-			</library_visual_styles>
-		</technique>
-	</extra>
 </COLLADA>
