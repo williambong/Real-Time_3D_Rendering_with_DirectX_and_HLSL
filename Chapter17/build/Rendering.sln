@@ -15,6 +15,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PointLightDemo", "..\source
 		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6} = {8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AmbientLightingDemo", "..\source\AmbientLightingDemo\AmbientLightingDemo.vcxproj", "{970CE685-2A28-4FE4-AAB3-B174ACF77077}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6} = {8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -33,6 +38,10 @@ Global
 		{1A6B3F67-9AE6-46B4-BBC8-044738AC42F4}.Debug|Win32.Build.0 = Debug|Win32
 		{1A6B3F67-9AE6-46B4-BBC8-044738AC42F4}.Release|Win32.ActiveCfg = Release|Win32
 		{1A6B3F67-9AE6-46B4-BBC8-044738AC42F4}.Release|Win32.Build.0 = Release|Win32
+		{970CE685-2A28-4FE4-AAB3-B174ACF77077}.Debug|Win32.ActiveCfg = Debug|Win32
+		{970CE685-2A28-4FE4-AAB3-B174ACF77077}.Debug|Win32.Build.0 = Debug|Win32
+		{970CE685-2A28-4FE4-AAB3-B174ACF77077}.Release|Win32.ActiveCfg = Release|Win32
+		{970CE685-2A28-4FE4-AAB3-B174ACF77077}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
