@@ -25,6 +25,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FullScreenDistortionDemo", 
 		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6} = {8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MaskingDistortionDemo", "..\source\MaskingDistortionDemo\MaskingDistortionDemo.vcxproj", "{11291C47-D8EF-43FD-8307-4BBA0ED60DB8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6} = {8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -51,6 +56,10 @@ Global
 		{AF6373B4-2000-4A0E-BE18-FFF51298F7C0}.Debug|Win32.Build.0 = Debug|Win32
 		{AF6373B4-2000-4A0E-BE18-FFF51298F7C0}.Release|Win32.ActiveCfg = Release|Win32
 		{AF6373B4-2000-4A0E-BE18-FFF51298F7C0}.Release|Win32.Build.0 = Release|Win32
+		{11291C47-D8EF-43FD-8307-4BBA0ED60DB8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{11291C47-D8EF-43FD-8307-4BBA0ED60DB8}.Debug|Win32.Build.0 = Debug|Win32
+		{11291C47-D8EF-43FD-8307-4BBA0ED60DB8}.Release|Win32.ActiveCfg = Release|Win32
+		{11291C47-D8EF-43FD-8307-4BBA0ED60DB8}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

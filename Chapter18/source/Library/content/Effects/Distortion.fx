@@ -22,8 +22,8 @@ Texture2D DistortionMap;
 SamplerState TrilinearSampler
 {
     Filter = MIN_MAG_MIP_LINEAR;
-    AddressU = WRAP;
-    AddressV = WRAP;
+    AddressU = CLAMP;
+    AddressV = CLAMP;
 };
 
 /************* Data Structures *************/

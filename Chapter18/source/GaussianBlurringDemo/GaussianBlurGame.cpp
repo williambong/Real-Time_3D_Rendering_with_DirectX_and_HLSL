@@ -18,7 +18,7 @@
 #include <iomanip>
 #include <SpriteBatch.h>
 #include <SpriteFont.h>
-#include "PointLight.h">
+#include "PointLight.h"
 
 #include "PointLightDemo.h"
 
