@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Library", "..\source\Library\Library.vcxproj", "{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProjectiveTextureMappingDemo", "..\source\ProjectiveTextureMappingDemo\ProjectiveTextureMappingDemo.vcxproj", "{D2406261-E7E0-4F61-8F86-9C50B4F284DD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6} = {8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProjectiveTextureMappingDepthMapDemo", "..\source\ProjectiveTextureMappingDepthMapDemo\ProjectiveTextureMappingDepthMapDemo.vcxproj", "{EE7E8694-06D9-448D-B604-A3D82FDBA49A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6} = {8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShadowMappingDemo", "..\source\ShadowMappingDemo\ShadowMappingDemo.vcxproj", "{91111DA2-B015-430D-8C9A-334F2C8FD08C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6} = {8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}.Debug|Win32.Build.0 = Debug|Win32
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}.Release|Win32.ActiveCfg = Release|Win32
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}.Release|Win32.Build.0 = Release|Win32
+		{D2406261-E7E0-4F61-8F86-9C50B4F284DD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D2406261-E7E0-4F61-8F86-9C50B4F284DD}.Debug|Win32.Build.0 = Debug|Win32
+		{D2406261-E7E0-4F61-8F86-9C50B4F284DD}.Release|Win32.ActiveCfg = Release|Win32
+		{D2406261-E7E0-4F61-8F86-9C50B4F284DD}.Release|Win32.Build.0 = Release|Win32
+		{EE7E8694-06D9-448D-B604-A3D82FDBA49A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EE7E8694-06D9-448D-B604-A3D82FDBA49A}.Debug|Win32.Build.0 = Debug|Win32
+		{EE7E8694-06D9-448D-B604-A3D82FDBA49A}.Release|Win32.ActiveCfg = Release|Win32
+		{EE7E8694-06D9-448D-B604-A3D82FDBA49A}.Release|Win32.Build.0 = Release|Win32
+		{91111DA2-B015-430D-8C9A-334F2C8FD08C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{91111DA2-B015-430D-8C9A-334F2C8FD08C}.Debug|Win32.Build.0 = Debug|Win32
+		{91111DA2-B015-430D-8C9A-334F2C8FD08C}.Release|Win32.ActiveCfg = Release|Win32
+		{91111DA2-B015-430D-8C9A-334F2C8FD08C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

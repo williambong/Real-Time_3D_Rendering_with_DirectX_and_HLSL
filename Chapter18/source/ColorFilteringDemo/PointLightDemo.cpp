@@ -166,7 +166,7 @@ namespace Rendering
 		static float pointLightIntensity = mPointLight->Color().a;
 		float elapsedTime = (float)gameTime.ElapsedGameTime();
 
-		// Upddate directional light intensity		
+		// Update point light intensity		
 		if (mKeyboard->IsKeyDown(DIK_HOME) && pointLightIntensity < UCHAR_MAX)
 		{
 			pointLightIntensity += LightModulationRate * elapsedTime;
