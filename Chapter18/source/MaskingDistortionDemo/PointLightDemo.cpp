@@ -19,7 +19,7 @@ namespace Rendering
 	RTTI_DEFINITIONS(PointLightDemo)
 
 		const float PointLightDemo::LightModulationRate = UCHAR_MAX;
-	const float PointLightDemo::LightMovementRate = 10.0f;
+		const float PointLightDemo::LightMovementRate = 10.0f;
 
 	PointLightDemo::PointLightDemo(Game& game, Camera& camera)
 		: DrawableGameComponent(game, camera), mEffect(nullptr), mMaterial(nullptr), mTextureShaderResourceView(nullptr),

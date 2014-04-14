@@ -67,7 +67,7 @@ IF EXIST "$(SolutionDir)..\content" xcopy /E /Y "$(SolutionDir)..\content" "$(Ou
 IF EXIST "$(ProjectDir)content" xcopy /E /Y "$(ProjectDir)Content" "$(OutDir)Content\"</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>copy "$(SolutionDir)..\external\assimp\bin\assimp_debug-dll_win32\*.dll" "$(TargetDir)"</Command>
+      <Command>copy  /Y "$(SolutionDir)..\external\assimp\bin\assimp_debug-dll_win32\*.dll" "$(TargetDir)"</Command>
     </PostBuildEvent>
     <FxCompile>
       <ObjectFileOutput>$(OutDir)Content\Effects\%(Filename).cso</ObjectFileOutput>
@@ -102,7 +102,7 @@ IF EXIST "$(SolutionDir)..\content" xcopy /E /Y "$(SolutionDir)..\content" "$(Ou
 IF EXIST "$(ProjectDir)content" xcopy /E /Y "$(ProjectDir)Content" "$(OutDir)Content\"</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>copy "$(SolutionDir)..\external\assimp\bin\assimp_release-dll_win32\*.dll" "$(TargetDir)"</Command>
+      <Command>copy  /Y "$(SolutionDir)..\external\assimp\bin\assimp_release-dll_win32\*.dll" "$(TargetDir)"</Command>
     </PostBuildEvent>
     <FxCompile>
       <ObjectFileOutput>$(OutDir)Content\Effects\%(Filename).cso</ObjectFileOutput>

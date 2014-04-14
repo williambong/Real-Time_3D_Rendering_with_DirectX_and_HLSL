@@ -158,12 +158,16 @@ namespace Rendering
 			if (mKeyboard->IsKeyDown(DIK_INSERT) && specularIntensity < UCHAR_MAX)
 			{
 				specularIntensity += LightModulationRate * (float)gameTime.ElapsedGameTime();
-				mSpecularPower = specularIntensity;
+				specularIntensity = XMMin<float>(specularIntensity, UCHAR_MAX);
+
+				mSpecularPower = specularIntensity;;
 			}
 
-			if (mKeyboard->IsKeyDown(DIK_DELETE) && specularIntensity > 1)
+			if (mKeyboard->IsKeyDown(DIK_DELETE) && specularIntensity > 0)
 			{
 				specularIntensity -= LightModulationRate * (float)gameTime.ElapsedGameTime();
+				specularIntensity = XMMax<float>(specularIntensity, 0);
+
 				mSpecularPower = specularIntensity;
 			}
 		}
@@ -174,22 +178,22 @@ namespace Rendering
 		static float pointLightIntensity = mPointLight->Color().a;
 		float elapsedTime = (float)gameTime.ElapsedGameTime();
 
-		// Upddate directional light intensity		
+		// Update point light intensity		
 		if (mKeyboard->IsKeyDown(DIK_HOME) && pointLightIntensity < UCHAR_MAX)
-		{			
+		{
 			pointLightIntensity += LightModulationRate * elapsedTime;
 
-			XMCOLOR directionalLightColor = mPointLight->Color();
-			directionalLightColor.a = XMMin<UCHAR>((UCHAR)pointLightIntensity, UCHAR_MAX);
-			mPointLight->SetColor(directionalLightColor);
+			XMCOLOR pointLightLightColor = mPointLight->Color();
+			pointLightLightColor.a = (UCHAR)XMMin<float>(pointLightIntensity, UCHAR_MAX);
+			mPointLight->SetColor(pointLightLightColor);
 		}
 		if (mKeyboard->IsKeyDown(DIK_END) && pointLightIntensity > 0)
 		{
 			pointLightIntensity -= LightModulationRate * elapsedTime;
 
-			XMCOLOR directionalLightColor = mPointLight->Color();
-			directionalLightColor.a = XMMax<UCHAR>((UCHAR)pointLightIntensity, 0);
-			mPointLight->SetColor(directionalLightColor);
+			XMCOLOR pointLightLightColor = mPointLight->Color();
+			pointLightLightColor.a = (UCHAR)XMMax<float>(pointLightIntensity, 0.0f);
+			mPointLight->SetColor(pointLightLightColor);
 		}
 
 		// Move point light
@@ -241,13 +245,13 @@ namespace Rendering
 			if (mKeyboard->IsKeyDown(DIK_PGUP) && ambientIntensity < UCHAR_MAX)
 			{
 				ambientIntensity += LightModulationRate * (float)gameTime.ElapsedGameTime();
-				mAmbientColor.a = XMMin<UCHAR>((UCHAR)ambientIntensity, UCHAR_MAX);
+				mAmbientColor.a = (UCHAR)XMMin<float>(ambientIntensity, UCHAR_MAX);
 			}
 
 			if (mKeyboard->IsKeyDown(DIK_PGDN) && ambientIntensity > 0)
 			{
 				ambientIntensity -= LightModulationRate * (float)gameTime.ElapsedGameTime();
-				mAmbientColor.a = XMMax<UCHAR>((UCHAR)ambientIntensity, 0);
+				mAmbientColor.a = (UCHAR)XMMax<float>(ambientIntensity, 0);
 			}
 		}
 	}

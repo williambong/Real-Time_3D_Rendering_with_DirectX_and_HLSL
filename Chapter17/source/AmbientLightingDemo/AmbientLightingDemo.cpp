@@ -125,34 +125,27 @@ namespace Rendering
 
 	void AmbientLightingDemo::UpdateAmbientLight(const GameTime& gameTime)
 	{
-		static float intensityModifier = 0.0f;
+		static float ambientIntensity = mAmbientLight->Color().a;
 
 		if (mKeyboard != nullptr)
 		{
-			XMCOLOR ambientColor = mAmbientLight->Color();
-
-			// Ambient light intensity
-			if (mKeyboard->IsKeyDown(DIK_PGUP) && ambientColor.a < UCHAR_MAX)
+			if (mKeyboard->IsKeyDown(DIK_PGUP) && ambientIntensity < UCHAR_MAX)
 			{
-				intensityModifier += AmbientModulationRate * (float)gameTime.ElapsedGameTime();
-				if (intensityModifier >= 1U)
-				{
-					ambientColor.a += (UINT)intensityModifier;
-					intensityModifier = 0.0f;
-				}
+				ambientIntensity += AmbientModulationRate * (float)gameTime.ElapsedGameTime();
+
+				XMCOLOR ambientColor = mAmbientLight->Color();
+				ambientColor.a = (UCHAR)XMMin<float>(ambientIntensity, UCHAR_MAX);
+				mAmbientLight->SetColor(ambientColor);
 			}
 
-			if (mKeyboard->IsKeyDown(DIK_PGDN) && ambientColor.a > 0)
+			if (mKeyboard->IsKeyDown(DIK_PGDN) && ambientIntensity > 0)
 			{
-				intensityModifier += AmbientModulationRate * (float)gameTime.ElapsedGameTime();
-				if (intensityModifier >= 1U)
-				{
-					ambientColor.a -= (UINT)intensityModifier;
-					intensityModifier = 0.0f;
-				}
-			}
+				ambientIntensity -= AmbientModulationRate * (float)gameTime.ElapsedGameTime();
 
-			mAmbientLight->SetColor(ambientColor);
+				XMCOLOR ambientColor = mAmbientLight->Color();				
+				ambientColor.a = (UCHAR)XMMax<float>(ambientIntensity, 0);
+				mAmbientLight->SetColor(ambientColor);
+			}
 		}
 	}
 }
