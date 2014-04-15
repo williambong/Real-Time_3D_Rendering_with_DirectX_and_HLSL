@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Library", "..\source\Library\Library.vcxproj", "{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GeometryShaderDemo", "..\source\GeometryShaderDemo\GeometryShaderDemo.vcxproj", "{D2406261-E7E0-4F61-8F86-9C50B4F284DD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6} = {8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BasicTessellationDemo", "..\source\BasicTessellationDemo\BasicTessellationDemo.vcxproj", "{8874D56D-804A-4093-A0EB-5D57ADDAAD30}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6} = {8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HeightmapTessellationDemo", "..\source\HeightmapTessellationDemo\HeightmapTessellationDemo.vcxproj", "{D28AE619-0EDC-4BBF-9D6D-5AD694AE1CE6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6} = {8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicLODDemo", "..\source\DynamicLODDemo\DynamicLODDemo.vcxproj", "{E282AC9D-9508-4CEB-94B5-E6719D6DD41C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6} = {8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}.Debug|Win32.Build.0 = Debug|Win32
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}.Release|Win32.ActiveCfg = Release|Win32
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}.Release|Win32.Build.0 = Release|Win32
+		{D2406261-E7E0-4F61-8F86-9C50B4F284DD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D2406261-E7E0-4F61-8F86-9C50B4F284DD}.Debug|Win32.Build.0 = Debug|Win32
+		{D2406261-E7E0-4F61-8F86-9C50B4F284DD}.Release|Win32.ActiveCfg = Release|Win32
+		{D2406261-E7E0-4F61-8F86-9C50B4F284DD}.Release|Win32.Build.0 = Release|Win32
+		{8874D56D-804A-4093-A0EB-5D57ADDAAD30}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8874D56D-804A-4093-A0EB-5D57ADDAAD30}.Debug|Win32.Build.0 = Debug|Win32
+		{8874D56D-804A-4093-A0EB-5D57ADDAAD30}.Release|Win32.ActiveCfg = Release|Win32
+		{8874D56D-804A-4093-A0EB-5D57ADDAAD30}.Release|Win32.Build.0 = Release|Win32
+		{D28AE619-0EDC-4BBF-9D6D-5AD694AE1CE6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D28AE619-0EDC-4BBF-9D6D-5AD694AE1CE6}.Debug|Win32.Build.0 = Debug|Win32
+		{D28AE619-0EDC-4BBF-9D6D-5AD694AE1CE6}.Release|Win32.ActiveCfg = Release|Win32
+		{D28AE619-0EDC-4BBF-9D6D-5AD694AE1CE6}.Release|Win32.Build.0 = Release|Win32
+		{E282AC9D-9508-4CEB-94B5-E6719D6DD41C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E282AC9D-9508-4CEB-94B5-E6719D6DD41C}.Debug|Win32.Build.0 = Debug|Win32
+		{E282AC9D-9508-4CEB-94B5-E6719D6DD41C}.Release|Win32.ActiveCfg = Release|Win32
+		{E282AC9D-9508-4CEB-94B5-E6719D6DD41C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
