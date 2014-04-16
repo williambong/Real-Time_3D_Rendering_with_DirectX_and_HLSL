@@ -4,7 +4,7 @@ This is the source code repository for the book *Real Time 3D Rendering with Dir
 
 [![Real-Time 3D Rendering with DirectX and HLSL](http://www.varcholik.org/RealTime3DRendering/BookCover.jpg)](http://www.informit.com/store/real-time-3d-rendering-with-directx-and-hlsl-a-practical-9780321962720)
 
-There is also a companion site for the book at [http:///www.varcholik.org/](http:///www.varcholik.org/). There you'll find errata and a forum for discussions and questions about the text.
+There is also a companion site for the book at [http://www.varcholik.org/](http://www.varcholik.org/). There you'll find errata and a forum for discussions and questions about the text.
 
 ###Dependencies
 
