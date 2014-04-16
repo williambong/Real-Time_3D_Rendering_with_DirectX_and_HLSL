@@ -13,12 +13,6 @@ namespace Library
 	class RenderStateHelper;
 }
 
-namespace DirectX
-{
-	class SpriteBatch;
-	class SpriteFont;
-}
-
 namespace Rendering
 {
 	class PointLightMaterial;
