@@ -8,7 +8,7 @@ There is also a companion site for the book at [http://www.varcholik.org/](http:
 
 ###Dependencies
 
-Chapters 4 through 9 are intended for use with [NVIDIA FX Composer](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CCsQFjAA&url=https%3A%2F%2Fdeveloper.nvidia.com%2Ffx-composer&ei=QtxOU_S4L9aoyAThxoCwBg&usg=AFQjCNEnzScM6Jvfc6_PgtWVFZsx6J_jfg&sig2=WzjFRGIOVJJ9FV-pQdTknw&bvm=bv.64764171,d.aWw).
+Chapters 4 through 9 are intended for use with [NVIDIA FX Composer](https://developer.nvidia.com/fx-composer).
 
 Chapters 10 through 22 require Visual Studio 2013 (any sku, including [Express 2013 for Windows Desktop](http://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx)).
 
