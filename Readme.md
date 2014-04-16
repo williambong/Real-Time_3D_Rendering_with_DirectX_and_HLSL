@@ -1,6 +1,6 @@
 ###Overview
 
-This is the source code repository for the book Real Time 3D Rendering with DirectX and HLSL: A Practical Guide to Graphics Programming by Paul Varcholik.
+This is the source code repository for the book *Real Time 3D Rendering with DirectX and HLSL: A Practical Guide to Graphics Programming* by Paul Varcholik.
 
 [![Real-Time 3D Rendering with DirectX and HLSL](http://www.varcholik.org/RealTime3DRendering/BookCover.jpg)](http://www.informit.com/store/real-time-3d-rendering-with-directx-and-hlsl-a-practical-9780321962720)
 
