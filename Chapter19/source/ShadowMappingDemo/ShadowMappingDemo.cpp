@@ -306,7 +306,7 @@ namespace Rendering
 
 		if (mActiveTechnique == ShadowMappingTechniquePCF)
 		{
-			helpLabel << L"Depth Bias (+J/-K): " << mDepthBias << "\n"
+			helpLabel << L"Depth Bias (+J/-K): " << (int)mDepthBias << "\n"
 				      << L"Slope-Scaled Depth Bias (+O/-P): " << mSlopeScaledDepthBias;
 		}
 
@@ -372,7 +372,7 @@ namespace Rendering
 		rasterizerStateDesc.FillMode = D3D11_FILL_SOLID;
 		rasterizerStateDesc.CullMode = D3D11_CULL_BACK;
 		rasterizerStateDesc.DepthClipEnable = true;
-		rasterizerStateDesc.DepthBias = mDepthBias;
+		rasterizerStateDesc.DepthBias = (int)mDepthBias;
 		rasterizerStateDesc.SlopeScaledDepthBias = mSlopeScaledDepthBias;
 
 		HRESULT hr = mGame->Direct3DDevice()->CreateRasterizerState(&rasterizerStateDesc, &mDepthBiasState);
