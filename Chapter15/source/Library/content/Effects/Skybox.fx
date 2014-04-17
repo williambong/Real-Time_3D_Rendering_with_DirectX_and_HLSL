@@ -40,7 +40,7 @@ VS_OUTPUT vertex_shader(VS_INPUT IN)
     VS_OUTPUT OUT = (VS_OUTPUT)0;
     
     OUT.Position = mul(IN.ObjectPosition, WorldViewProjection);
-    OUT.TextureCoordinate = IN.ObjectPosition;
+    OUT.TextureCoordinate = IN.ObjectPosition.xyz;
     
     return OUT;
 }
