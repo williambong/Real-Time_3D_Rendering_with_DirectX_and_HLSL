@@ -1,4 +1,0 @@
-D:\Development\BitBucket\Graphics Book\Supplemental Material\Visual Studio\external\DirectXTK\source\MakeSpriteFont\bin\Release\MakeSpriteFont.exe
-D:\Development\BitBucket\Graphics Book\Supplemental Material\Visual Studio\external\DirectXTK\source\MakeSpriteFont\bin\Release\MakeSpriteFont.pdb
-D:\Development\BitBucket\Graphics Book\Supplemental Material\Visual Studio\external\DirectXTK\source\MakeSpriteFont\obj\Release\MakeSpriteFont.exe
-D:\Development\BitBucket\Graphics Book\Supplemental Material\Visual Studio\external\DirectXTK\source\MakeSpriteFont\obj\Release\MakeSpriteFont.pdb
