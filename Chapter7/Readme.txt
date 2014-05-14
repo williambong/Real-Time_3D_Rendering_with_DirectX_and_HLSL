@@ -1,0 +1,1 @@
+There have been reported issues with NVIDIA FX Composer crashing under Windows 8.1. As an alternative for visualizing your shaders, you'll find Visual Studio projects for this chapter's content under the "Visual Studio" directory. Pre-compiled binaries (for Win32) are also also available under the "Visual Studio\bin" directory.
