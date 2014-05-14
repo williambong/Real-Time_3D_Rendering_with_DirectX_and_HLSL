@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+	<asset>
+		<contributor>
+			<author>pvarcholik</author>
+			<authoring_tool>NVIDIA FX Composer 2.5</authoring_tool>
+			<comments/>
+			<copyright/>
+		</contributor>
+		<created>2014-03-11T16:44:16Z</created>
+		<keywords>FXComposer, NVIDIA</keywords>
+		<modified>2014-03-11T16:44:17Z</modified>
+		<subject/>
+		<title/>
+		<unit/>
+		<up_axis>Y_UP</up_axis>
+	</asset>
+	<library_geometries>
+		<geometry id="obj_file_default_material" name="obj_file_default_material">
+			<mesh>
+				<source id="Scene1" name="FXStream">
+					<float_array id="Scene1-array" count="12">-3.2674 1.60651 3.2674 3.2674 1.60651 3.2674 -3.2674 1.60651 -3.2674 3.2674 1.60651 -3.2674</float_array>
+					<technique_common>
+						<accessor count="4" source="#Scene1-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Scene2" name="FXStream">
+					<float_array id="Scene2-array" count="4">1 1 1 1</float_array>
+					<technique_common>
+						<accessor count="4" source="#Scene2-array">
+							<param name="X" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Scene3" name="FXStream">
+					<float_array id="Scene3-array" count="12">0 -3 0 3 -3 0 0 0 0 3 0 0</float_array>
+					<technique_common>
+						<accessor count="4" source="#Scene3-array" stride="3">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+							<param name="R" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Scene4" name="FXStream">
+					<float_array id="Scene4-array" count="12">0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+					<technique_common>
+						<accessor count="4" source="#Scene4-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="obj_file_default_material-Vertex-0">
+					<input semantic="POSITION" source="#Scene1"/>
+				</vertices>
+				<polygons count="1" material="obj_file_default_material">
+					<input offset="0" semantic="VERTEX" source="#obj_file_default_material-Vertex-0"/>
+					<input offset="1" semantic="WEIGHT" source="#Scene2" set="0"/>
+					<input offset="2" semantic="TEXCOORD" source="#Scene3" set="0"/>
+					<input offset="3" semantic="NORMAL" source="#Scene4" set="0"/>
+					<p>0 0 0 0 1 1 1 1 3 3 3 2 2 2 2 3</p>
+				</polygons>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_visual_scenes>
+		<visual_scene id="Scene" name="Scene">
+			<node id="Node" name="Node" layer="">
+				<matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+				<instance_geometry url="#obj_file_default_material" sid="GeometryInstance" name="obj_file_default_material">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="obj_file_default_material" target="Document1.dae#DefaultMaterial"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<extra type="evaluatescene_enables">
+				<technique profile="NVIDIA_FXCOMPOSER"/>
+			</extra>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#Scene"/>
+	</scene>
+</COLLADA>

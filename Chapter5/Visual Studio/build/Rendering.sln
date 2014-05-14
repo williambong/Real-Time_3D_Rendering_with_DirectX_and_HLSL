@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Library", "..\source\Library\Library.vcxproj", "{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TextureMappingDemo", "..\source\TextureMappingDemo\TextureMappingDemo.vcxproj", "{BEE86C79-7623-478F-9D43-DAA870B092D9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6} = {8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}.Debug|Win32.Build.0 = Debug|Win32
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}.Release|Win32.ActiveCfg = Release|Win32
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}.Release|Win32.Build.0 = Release|Win32
+		{BEE86C79-7623-478F-9D43-DAA870B092D9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BEE86C79-7623-478F-9D43-DAA870B092D9}.Debug|Win32.Build.0 = Debug|Win32
+		{BEE86C79-7623-478F-9D43-DAA870B092D9}.Release|Win32.ActiveCfg = Release|Win32
+		{BEE86C79-7623-478F-9D43-DAA870B092D9}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
