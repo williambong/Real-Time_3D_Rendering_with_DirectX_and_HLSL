@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Library", "..\source\Library\Library.vcxproj", "{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PointLightDemo", "..\source\PointLightDemo\PointLightDemo.vcxproj", "{1A6B3F67-9AE6-46B4-BBC8-044738AC42F4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6} = {8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpotLightDemo", "..\source\SpotLightDemo\SpotLightDemo.vcxproj", "{8D6F6747-EF1E-4F54-A7B2-7AF03F090EBE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6} = {8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultiplePointLightsDemo", "..\source\MultiplePointLightsDemo\MultiplePointLightsDemo.vcxproj", "{1E326C03-44B6-4F76-B030-C201CAF676E0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6} = {8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}.Debug|Win32.Build.0 = Debug|Win32
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}.Release|Win32.ActiveCfg = Release|Win32
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}.Release|Win32.Build.0 = Release|Win32
+		{1A6B3F67-9AE6-46B4-BBC8-044738AC42F4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1A6B3F67-9AE6-46B4-BBC8-044738AC42F4}.Debug|Win32.Build.0 = Debug|Win32
+		{1A6B3F67-9AE6-46B4-BBC8-044738AC42F4}.Release|Win32.ActiveCfg = Release|Win32
+		{1A6B3F67-9AE6-46B4-BBC8-044738AC42F4}.Release|Win32.Build.0 = Release|Win32
+		{8D6F6747-EF1E-4F54-A7B2-7AF03F090EBE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8D6F6747-EF1E-4F54-A7B2-7AF03F090EBE}.Debug|Win32.Build.0 = Debug|Win32
+		{8D6F6747-EF1E-4F54-A7B2-7AF03F090EBE}.Release|Win32.ActiveCfg = Release|Win32
+		{8D6F6747-EF1E-4F54-A7B2-7AF03F090EBE}.Release|Win32.Build.0 = Release|Win32
+		{1E326C03-44B6-4F76-B030-C201CAF676E0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1E326C03-44B6-4F76-B030-C201CAF676E0}.Debug|Win32.Build.0 = Debug|Win32
+		{1E326C03-44B6-4F76-B030-C201CAF676E0}.Release|Win32.ActiveCfg = Release|Win32
+		{1E326C03-44B6-4F76-B030-C201CAF676E0}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
