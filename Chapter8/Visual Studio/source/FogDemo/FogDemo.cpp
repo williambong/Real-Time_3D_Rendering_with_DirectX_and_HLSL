@@ -120,7 +120,7 @@ namespace Rendering
 
 		XMMATRIX worldMatrix = XMLoadFloat4x4(&mWorldMatrix);
 		XMMATRIX wvp = worldMatrix * mCamera->ViewMatrix() * mCamera->ProjectionMatrix();
-		XMVECTOR ambientColor = XMLoadColor(&mAmbientColor);			
+		XMVECTOR ambientColor = XMLoadColor(&mAmbientColor);
 
 		mMaterial->WorldViewProjection() << wvp;
 		mMaterial->World () << worldMatrix;

@@ -53,7 +53,6 @@ namespace Rendering
 		SpotLightMaterial* mMaterial;		
 		ID3D11ShaderResourceView* mTextureShaderResourceView;
 		ID3D11Buffer* mVertexBuffer;
-		ID3D11Buffer* mIndexBuffer;
 		UINT mVertexCount;
 
 		Keyboard* mKeyboard;

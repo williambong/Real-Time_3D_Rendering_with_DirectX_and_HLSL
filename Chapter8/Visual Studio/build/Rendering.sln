@@ -15,6 +15,16 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FogDemo", "..\source\FogDem
 		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6} = {8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EnvironmentMappingDemo", "..\source\EnvironmentMappingDemo\EnvironmentMappingDemo.vcxproj", "{66E61A15-7663-41C3-80FD-8ACB1D5C1FC0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6} = {8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TransparencyMappingDemo", "..\source\TransparencyMappingDemo\TransparencyMappingDemo.vcxproj", "{8D6F6747-EF1E-4F54-A7B2-7AF03F090EBE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6} = {8F60BA9C-AAB6-47E4-BD36-DCDEBF4D9AE6}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -33,6 +43,14 @@ Global
 		{D2406261-E7E0-4F61-8F86-9C50B4F284DD}.Debug|Win32.Build.0 = Debug|Win32
 		{D2406261-E7E0-4F61-8F86-9C50B4F284DD}.Release|Win32.ActiveCfg = Release|Win32
 		{D2406261-E7E0-4F61-8F86-9C50B4F284DD}.Release|Win32.Build.0 = Release|Win32
+		{66E61A15-7663-41C3-80FD-8ACB1D5C1FC0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{66E61A15-7663-41C3-80FD-8ACB1D5C1FC0}.Debug|Win32.Build.0 = Debug|Win32
+		{66E61A15-7663-41C3-80FD-8ACB1D5C1FC0}.Release|Win32.ActiveCfg = Release|Win32
+		{66E61A15-7663-41C3-80FD-8ACB1D5C1FC0}.Release|Win32.Build.0 = Release|Win32
+		{8D6F6747-EF1E-4F54-A7B2-7AF03F090EBE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8D6F6747-EF1E-4F54-A7B2-7AF03F090EBE}.Debug|Win32.Build.0 = Debug|Win32
+		{8D6F6747-EF1E-4F54-A7B2-7AF03F090EBE}.Release|Win32.ActiveCfg = Release|Win32
+		{8D6F6747-EF1E-4F54-A7B2-7AF03F090EBE}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

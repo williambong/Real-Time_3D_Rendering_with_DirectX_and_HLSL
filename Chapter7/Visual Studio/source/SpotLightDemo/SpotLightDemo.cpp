@@ -28,7 +28,7 @@ namespace Rendering
 
 	SpotLightDemo::SpotLightDemo(Game& game, Camera& camera)
 		: DrawableGameComponent(game, camera), mEffect(nullptr), mMaterial(nullptr), mTextureShaderResourceView(nullptr),
-		  mVertexBuffer(nullptr), mIndexBuffer(nullptr), mVertexCount(0),
+		  mVertexBuffer(nullptr), mVertexCount(0),
 		  mKeyboard(nullptr), mAmbientColor(1.0f, 1.0f, 1.0, 0.0f), mSpotLight(nullptr), 
 		  mSpecularColor(1.0f, 1.0f, 1.0f, 1.0f), mSpecularPower(25.0f), mWorldMatrix(MatrixHelper::Identity), mProxyModel(nullptr),
 		  mRenderStateHelper(nullptr), mSpriteBatch(nullptr), mSpriteFont(nullptr), mTextPosition(0.0f, 40.0f)
@@ -46,7 +46,6 @@ namespace Rendering
 		DeleteObject(mMaterial);
 		DeleteObject(mEffect);	
 		ReleaseObject(mVertexBuffer);
-		ReleaseObject(mIndexBuffer);
 	}
 
 	void SpotLightDemo::Initialize()
@@ -70,7 +69,6 @@ namespace Rendering
 			VertexPositionTextureNormal(XMFLOAT4(0.5f, 1.0f, 0.0f, 1.0f), XMFLOAT2(1.0f, 0.0f), Vector3Helper::Backward),
 			VertexPositionTextureNormal(XMFLOAT4(0.5f, 0.0f, 0.0f, 1.0f), XMFLOAT2(1.0f, 1.0f), Vector3Helper::Backward),
         };
-
 
 		mVertexCount= ARRAYSIZE(vertices);
 		mMaterial->CreateVertexBuffer(mGame->Direct3DDevice(), vertices, mVertexCount, &mVertexBuffer);		
@@ -122,7 +120,6 @@ namespace Rendering
 		UINT stride = mMaterial->VertexSize();
 		UINT offset = 0;
 		direct3DDeviceContext->IASetVertexBuffers(0, 1, &mVertexBuffer, &stride, &offset);
-		direct3DDeviceContext->IASetIndexBuffer(mIndexBuffer, DXGI_FORMAT_R32_UINT, 0);
 
 		XMMATRIX worldMatrix = XMLoadFloat4x4(&mWorldMatrix);
 		XMMATRIX wvp = worldMatrix * mCamera->ViewMatrix() * mCamera->ProjectionMatrix();
