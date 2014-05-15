@@ -18,7 +18,6 @@ namespace Library
         const D3DX11_EFFECT_TYPE_DESC& TypeDesc() const;
         const std::string& Name() const;
 
-		//TODO: make this std::unique_ptr
 		Variable operator[](UINT index);
 
         Variable& operator<<(CXMMATRIX value);
@@ -32,8 +31,6 @@ namespace Library
 		Variable& operator<<(const std::vector<XMFLOAT4X4>& values);
 
     private:
-		//TODO: remove
-        //Variable(const Variable& rhs);
         Variable& operator=(const Variable& rhs);
 
         Effect& mEffect;
