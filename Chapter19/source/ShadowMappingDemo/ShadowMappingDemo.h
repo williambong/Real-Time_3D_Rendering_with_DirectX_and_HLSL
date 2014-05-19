@@ -82,7 +82,6 @@ namespace Rendering
 		Projector* mProjector;
 		Frustum mProjectorFrustum;
 		RenderableFrustum* mRenderableProjectorFrustum;
-		ID3D11ShaderResourceView* mProjectedTexture;
 		
 		ID3D11Buffer* mPlanePositionVertexBuffer;
 		ID3D11Buffer* mPlanePositionUVNormalVertexBuffer;

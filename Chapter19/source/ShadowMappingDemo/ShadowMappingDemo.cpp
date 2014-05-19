@@ -40,7 +40,7 @@ namespace Rendering
 		  mPlanePositionVertexBuffer(nullptr), mPlanePositionUVNormalVertexBuffer(nullptr), mPlaneIndexBuffer(nullptr), mPlaneVertexCount(0),
 		  mKeyboard(nullptr), mAmbientColor(1.0f, 1.0f, 1.0, 0.0f), mPointLight(nullptr), 
 		  mSpecularColor(1.0f, 1.0f, 1.0f, 1.0f), mSpecularPower(25.0f), mPlaneWorldMatrix(MatrixHelper::Identity), mProxyModel(nullptr),
-		  mProjector(nullptr), mProjectorFrustum(XMMatrixIdentity()), mRenderableProjectorFrustum(nullptr), mProjectedTexture(nullptr),
+		  mProjector(nullptr), mProjectorFrustum(XMMatrixIdentity()), mRenderableProjectorFrustum(nullptr),
 		  mShadowMappingEffect(nullptr), mShadowMappingMaterial(nullptr),
 		  mProjectedTextureScalingMatrix(MatrixHelper::Zero), mRenderStateHelper(game),
 		  mModelPositionVertexBuffer(nullptr), mModelPositionUVNormalVertexBuffer(nullptr), mModelIndexBuffer(nullptr), mModelIndexCount(0),
@@ -63,7 +63,6 @@ namespace Rendering
 		ReleaseObject(mModelPositionVertexBuffer);
 		DeleteObject(mShadowMappingMaterial);
 		DeleteObject(mShadowMappingEffect);
-		ReleaseObject(mProjectedTexture);
 		DeleteObject(mRenderableProjectorFrustum);
 		DeleteObject(mProjector);
 		DeleteObject(mProxyModel);
@@ -144,12 +143,6 @@ namespace Rendering
 		mRenderableProjectorFrustum = new RenderableFrustum(*mGame, *mCamera);
 		mRenderableProjectorFrustum->Initialize();
 		mRenderableProjectorFrustum->InitializeGeometry(mProjectorFrustum);
-
-		textureName = L"Content\\Textures\\ProjectedTexture.png";
-		if (FAILED(hr = DirectX::CreateWICTextureFromFile(mGame->Direct3DDevice(), mGame->Direct3DDeviceContext(), textureName.c_str(), nullptr, &mProjectedTexture)))
-		{
-			throw GameException("CreateWICTextureFromFile() failed.", hr);
-		}
 
 		InitializeProjectedTextureScalingMatrix();
 
