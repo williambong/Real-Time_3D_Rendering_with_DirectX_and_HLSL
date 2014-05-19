@@ -13,3 +13,7 @@ Chapters 4 through 9 are intended for use with [NVIDIA FX Composer](https://deve
 Chapters 10 through 22 require Visual Studio 2013 (any sku, including [Express 2013 for Windows Desktop](http://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx)).
 
 There is no source for Chapters 1 through 3.
+
+### Attention Windows 8.1 Users
+
+The latest revision of NVIDIA FX Composer (which is used in Chapters 4-9) does not run under Windows 8.1. However, [an older version (2.51.0701.1135)](www.softpedia.com/progDownload/NVIDIA-FX-Composer-Download-104791.html) does work. I’ve tested all of the .fxcproj files included with the book’s source code, they all load correctly and their corresponding shaders run without issue.
