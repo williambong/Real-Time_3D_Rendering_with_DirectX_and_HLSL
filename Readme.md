@@ -16,4 +16,4 @@ There is no source for Chapters 1 through 3.
 
 ### Attention Windows 8.1 Users
 
-The latest revision of NVIDIA FX Composer (which is used in Chapters 4-9) does not run under Windows 8.1. However, [an older version (2.51.0701.1135)](http://www.softpedia.com/progDownload/NVIDIA-FX-Composer-Download-104791.html) does work. I have tested all of the .fxcproj files included with the book''s source code, they all load correctly and their corresponding shaders run without issue.
+The latest revision of NVIDIA FX Composer (which is used in Chapters 4-9) does not run under Windows 8.1. However, [an older version (2.51.0701.1135)](http://www.softpedia.com/progDownload/NVIDIA-FX-Composer-Download-104791.html) does work. I have tested all of the .fxcproj files included with the source code, they all load correctly and their corresponding shaders run without issue.
