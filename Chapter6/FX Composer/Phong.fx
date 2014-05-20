@@ -115,7 +115,7 @@ float4 pixel_shader(VS_OUTPUT IN) : SV_Target
 
 	if (n_dot_l > 0)
 	{
-		diffuse = LightColor.rgb * LightColor.a * saturate(n_dot_l) * color.rgb;
+		diffuse = LightColor.rgb * LightColor.a * n_dot_l * color.rgb;
 
 		// R = 2 * (N.L) * N - L
     	float3 reflectionVector = normalize(2 * n_dot_l * normal - lightDirection);  
