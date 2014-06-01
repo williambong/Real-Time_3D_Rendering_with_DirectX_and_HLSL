@@ -118,7 +118,6 @@ IF EXIST "$(ProjectDir)content" xcopy /E /Y "$(ProjectDir)Content" "$(OutDir)Con
   <ItemGroup>
     <ClInclude Include="RenderingGame.h" />
     <ClInclude Include="TexturedModelDemo.h" />
-    <ClInclude Include="TexturedMaterialDemo.h" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="content\Effects\TextureMapping.fx" />

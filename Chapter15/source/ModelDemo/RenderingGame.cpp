@@ -17,8 +17,8 @@ namespace Rendering
         :  Game(instance, windowClass, windowTitle, showCommand),
            mFpsComponent(nullptr),
            mDirectInput(nullptr), mKeyboard(nullptr), mMouse(nullptr), mRenderStateHelper(nullptr),
-           mModelDemo(nullptr), mTexturedModelDemo(nullptr), mMaterialDemo(nullptr),
-		   mTexturedMaterialDemo(nullptr), mSkybox(nullptr)
+           mModelDemo(nullptr), mTexturedModelDemo(nullptr),
+		   mSkybox(nullptr)
     {
         mDepthStencilBufferEnabled = true;
         mMultiSamplingEnabled = true;

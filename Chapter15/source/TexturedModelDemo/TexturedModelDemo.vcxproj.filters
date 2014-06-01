@@ -31,9 +31,6 @@
     <ClInclude Include="RenderingGame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TexturedMaterialDemo.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="TexturedModelDemo.h">
       <Filter>Header Files</Filter>
     </ClInclude>

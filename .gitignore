@@ -1,0 +1,11 @@
+*.obj
+Chapter14/build/Debug/
+Chapter14/source/CubeDemo/Debug/
+Chapter14/source/Library/Debug/
+Chapter14/source/TriangleDemo/Debug/
+Chapter14/content/
+Chapter14/build/Rendering.opensdf
+Chapter14/build/Rendering.sdf
+Chapter14/lib/Libraryd.lib
+Chapter17/build/Rendering.sdf
+external/Effects11/source/Bin/Desktop_2013/

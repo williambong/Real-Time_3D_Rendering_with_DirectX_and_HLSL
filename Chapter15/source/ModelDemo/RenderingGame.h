@@ -19,8 +19,6 @@ namespace Rendering
 {
 	class ModelDemo;
 	class TexturedModelDemo;
-	class MaterialDemo;
-	class TexturedMaterialDemo;
 
     class RenderingGame : public Game
     {
@@ -48,7 +46,5 @@ namespace Rendering
 
 		ModelDemo* mModelDemo;
 		TexturedModelDemo* mTexturedModelDemo;
-		MaterialDemo* mMaterialDemo;
-		TexturedMaterialDemo* mTexturedMaterialDemo;
     };
 }
