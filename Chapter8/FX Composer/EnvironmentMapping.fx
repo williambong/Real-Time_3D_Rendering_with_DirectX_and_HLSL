@@ -99,6 +99,7 @@ float4 pixel_shader(VS_OUTPUT IN) : SV_Target
 	float3 reflection = get_vector_color_contribution(EnvColor, environment);
 	
 	OUT.rgb = lerp(ambient, reflection, ReflectionAmount);
+	OUT.a = color.a;
 
 	return OUT;
 }
