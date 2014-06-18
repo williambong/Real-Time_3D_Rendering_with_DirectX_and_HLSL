@@ -37,3 +37,5 @@ Chapter18/source/Game/Release/
 Chapter18/source/Library/Debug/
 Chapter18/source/Library/Release/
 Chapter8/Visual Studio/build/Debug/
+Chapter18/source/ColorFilteringDemo/Debug/
+*.opensdf

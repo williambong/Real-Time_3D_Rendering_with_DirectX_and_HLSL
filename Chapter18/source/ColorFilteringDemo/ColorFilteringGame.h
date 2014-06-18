@@ -17,7 +17,6 @@ namespace Library
 	class FullScreenRenderTarget;
 	class FullScreenQuad;
 	class Effect;
-	class GaussianBlur;
 }
 
 namespace DirectX
@@ -58,7 +57,7 @@ namespace Rendering
 
     private:
         void UpdateColorFilterMaterial();
-		void ColorFilteringGame::UpdateGenericColorFilter(const GameTime& gameTime);
+		void UpdateGenericColorFilter(const GameTime& gameTime);
 
 		static const float BrightnessModulationRate;
 		static const XMVECTORF32 BackgroundColor;		
@@ -79,7 +78,7 @@ namespace Rendering
 		Effect* mColorFilterEffect;
 		ColorFilterMaterial* mColorFilterMaterial;
 		ColorFilter mActiveColorFilter;
-		XMFLOAT4X4 mGenericColorFilter;		
+		XMFLOAT4X4 mGenericColorFilter;
 
 		SpriteBatch* mSpriteBatch;
 		SpriteFont* mSpriteFont;
