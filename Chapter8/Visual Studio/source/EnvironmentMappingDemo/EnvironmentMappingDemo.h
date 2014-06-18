@@ -7,7 +7,6 @@ using namespace Library;
 namespace Library
 {
 	class Effect;
-	class PointLight;
 	class Keyboard;
 	class ProxyModel;
 	class RenderStateHelper;

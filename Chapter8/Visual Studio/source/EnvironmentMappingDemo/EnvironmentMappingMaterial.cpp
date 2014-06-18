@@ -53,7 +53,7 @@ namespace Rendering
 		std::vector<XMFLOAT3>* textureCoordinates = mesh.TextureCoordinates().at(0);
 		assert(textureCoordinates->size() == sourceVertices.size());
 		const std::vector<XMFLOAT3>& normals = mesh.Normals();
-		assert(textureCoordinates->size() == sourceVertices.size());
+		assert(normals.size() == sourceVertices.size());
 
 		std::vector<VertexPositionTextureNormal> vertices;
 		vertices.reserve(sourceVertices.size());

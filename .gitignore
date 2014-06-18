@@ -1,4 +1,5 @@
 *.obj
+*.sdf
 Chapter14/build/Debug/
 Chapter14/source/CubeDemo/Debug/
 Chapter14/source/Library/Debug/
@@ -9,3 +10,30 @@ Chapter14/build/Rendering.sdf
 Chapter14/lib/Libraryd.lib
 Chapter17/build/Rendering.sdf
 external/Effects11/source/Bin/Desktop_2013/
+Chapter12/build/Debug/
+Chapter12/build/Release/
+Chapter12/content/
+Chapter12/lib/
+Chapter12/source/Game/Debug/
+Chapter12/source/Game/Release/
+Chapter12/source/Library/Debug/
+Chapter12/source/Library/Release/
+
+Chapter15/build/Debug/
+Chapter15/build/Release/
+Chapter15/content/
+Chapter15/lib/
+Chapter15/source/Game/Debug/
+Chapter15/source/Game/Release/
+Chapter15/source/Library/Debug/
+Chapter15/source/Library/Release/
+
+Chapter18/build/Debug/
+Chapter18/build/Release/
+Chapter18/content/
+Chapter18/lib/
+Chapter18/source/Game/Debug/
+Chapter18/source/Game/Release/
+Chapter18/source/Library/Debug/
+Chapter18/source/Library/Release/
+Chapter8/Visual Studio/build/Debug/
