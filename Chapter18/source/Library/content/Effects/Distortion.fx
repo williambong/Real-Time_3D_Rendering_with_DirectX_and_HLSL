@@ -6,11 +6,6 @@ cbuffer CBufferPerObjectCutout
     float4x4 WorldViewProjection : WORLDVIEWPROJECTION;	
 }
 
-cbuffer CBufferPerFrameCutout
-{
-    float Time : TIME;
-}
-
 cbuffer CBufferPerObjectComposite
 {
     float DisplacementScale = 1.0f;
@@ -75,7 +70,7 @@ float4 distortion_composite_pixel_shader(VS_OUTPUT IN) : SV_Target
 {
     float4 OUT = (float4)0;
 
-    float2 displacement = DistortionMap.Sample(TrilinearSampler, IN.TextureCoordinate).rg;
+    float2 displacement = DistortionMap.Sample(TrilinearSampler, IN.TextureCoordinate).xy;
     if (displacement.x == 0 && displacement.y == 0)
     {
         OUT = SceneTexture.Sample(TrilinearSampler, IN.TextureCoordinate);

@@ -9,8 +9,7 @@ namespace Library
 	DistortionMappingMaterial::DistortionMappingMaterial()
 		: Material(),
 		  MATERIAL_VARIABLE_INITIALIZATION(WorldViewProjection), MATERIAL_VARIABLE_INITIALIZATION(SceneTexture),
-		  MATERIAL_VARIABLE_INITIALIZATION(DistortionMap), MATERIAL_VARIABLE_INITIALIZATION(DisplacementScale),
-		  MATERIAL_VARIABLE_INITIALIZATION(Time)
+		  MATERIAL_VARIABLE_INITIALIZATION(DistortionMap), MATERIAL_VARIABLE_INITIALIZATION(DisplacementScale)
 	{
 	}
 
@@ -18,7 +17,6 @@ namespace Library
 	MATERIAL_VARIABLE_DEFINITION(DistortionMappingMaterial, SceneTexture)
 	MATERIAL_VARIABLE_DEFINITION(DistortionMappingMaterial, DistortionMap)
 	MATERIAL_VARIABLE_DEFINITION(DistortionMappingMaterial, DisplacementScale)
-	MATERIAL_VARIABLE_DEFINITION(DistortionMappingMaterial, Time)
 
 	void DistortionMappingMaterial::Initialize(Effect& effect)
 	{
@@ -28,7 +26,6 @@ namespace Library
 		MATERIAL_VARIABLE_RETRIEVE(SceneTexture)
 		MATERIAL_VARIABLE_RETRIEVE(DistortionMap)
 		MATERIAL_VARIABLE_RETRIEVE(DisplacementScale)
-		MATERIAL_VARIABLE_RETRIEVE(Time)
 
 		D3D11_INPUT_ELEMENT_DESC inputElementDescriptions[] =
 		{

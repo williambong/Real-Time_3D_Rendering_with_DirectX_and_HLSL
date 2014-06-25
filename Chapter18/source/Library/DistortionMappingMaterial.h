@@ -14,7 +14,6 @@ namespace Library
 		MATERIAL_VARIABLE_DECLARATION(SceneTexture)
 		MATERIAL_VARIABLE_DECLARATION(DistortionMap)
 		MATERIAL_VARIABLE_DECLARATION(DisplacementScale)
-		MATERIAL_VARIABLE_DECLARATION(Time)
 
 	public:
 		DistortionMappingMaterial();

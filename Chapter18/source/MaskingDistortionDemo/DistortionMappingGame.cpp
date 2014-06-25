@@ -251,7 +251,6 @@ namespace Rendering
 		XMMATRIX wvp = worldMatrix * mCamera->ViewMatrix() * mCamera->ProjectionMatrix();
         mDistortionMappingMaterial->WorldViewProjection() << wvp;
 		mDistortionMappingMaterial->DistortionMap() << mDistortionMap;
-		mDistortionMappingMaterial->Time() << static_cast<float>(mGameTime.TotalGameTime());
 
         mDistortionCutoutPass->Apply(0, mDirect3DDeviceContext);
 
