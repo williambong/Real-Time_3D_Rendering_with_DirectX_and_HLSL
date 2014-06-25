@@ -36,7 +36,7 @@ namespace Rendering
 		  mSpecularColor(1.0f, 1.0f, 1.0f, 1.0f), mSpecularPower(25.0f), 
 		  mProxyModel(nullptr), mProjector(nullptr), mProjectorFrustum(XMMatrixIdentity()), mRenderableProjectorFrustum(nullptr), mProjectedTexture(nullptr),
 		  mProjectiveTextureMappingEffect(nullptr), mProjectiveTextureMappingMaterial(nullptr), mPlaneVertexBuffer(nullptr),
-		  mPlaneIndexBuffer(nullptr), mPlaneVertexCount(0), mPlaneWorldMatrix(MatrixHelper::Identity),
+		  mPlaneVertexCount(0), mPlaneWorldMatrix(MatrixHelper::Identity),
 		  mProjectedTextureScalingMatrix(MatrixHelper::Zero), mCheckerboardTexture(nullptr), mUseNoReverseTechnique(false),
 		  mRenderStateHelper(nullptr), mSpriteBatch(nullptr), mSpriteFont(nullptr), mTextPosition(0.0f, 40.0f)
 	{
@@ -57,7 +57,6 @@ namespace Rendering
 		DeleteObject(mProjectiveTextureMappingMaterial);
 		DeleteObject(mProjectiveTextureMappingEffect);
 		ReleaseObject(mPlaneVertexBuffer);
-		ReleaseObject(mPlaneIndexBuffer);
 	}
 
 	void ProjectiveTextureMappingSimpleDemo::Initialize()
@@ -83,14 +82,7 @@ namespace Rendering
 			VertexPositionTextureNormal(XMFLOAT4(0.5f, 0.0f, 0.0f, 1.0f), XMFLOAT2(1.0f, 1.0f), Vector3Helper::Backward),
         };
 
-		mPlaneVertexCount = ARRAYSIZE(vertices);
-		std::vector<VertexPosition> positionOnlyVertices;
-		positionOnlyVertices.reserve(mPlaneVertexCount);
-		for (UINT i = 0; i < mPlaneVertexCount; i++)
-		{
-			positionOnlyVertices.push_back(VertexPosition(vertices[i].Position));
-		}
-		
+		mPlaneVertexCount = ARRAYSIZE(vertices);	
 		mProjectiveTextureMappingMaterial->CreateVertexBuffer(mGame->Direct3DDevice(), vertices, mPlaneVertexCount, &mPlaneVertexBuffer);
 
 		std::wstring textureName = L"Content\\Textures\\Checkerboard.png";
@@ -166,7 +158,6 @@ namespace Rendering
 		UINT stride = mProjectiveTextureMappingMaterial->VertexSize();
 		UINT offset = 0;
 		direct3DDeviceContext->IASetVertexBuffers(0, 1, &mPlaneVertexBuffer, &stride, &offset);
-		direct3DDeviceContext->IASetIndexBuffer(mPlaneIndexBuffer, DXGI_FORMAT_R32_UINT, 0);
 
 		XMMATRIX planeWorldMatrix = XMLoadFloat4x4(&mPlaneWorldMatrix);
 		XMMATRIX planeWVP = planeWorldMatrix * mCamera->ViewMatrix() * mCamera->ProjectionMatrix();
