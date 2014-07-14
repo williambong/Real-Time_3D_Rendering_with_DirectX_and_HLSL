@@ -145,7 +145,7 @@ namespace Library
 
 		for (SceneNode* childNode : sceneNode.Children())
 		{
-			GetBindPose(*childNode);
+			GetBindPoseBottomUp(*childNode);
 		}
 	}
 

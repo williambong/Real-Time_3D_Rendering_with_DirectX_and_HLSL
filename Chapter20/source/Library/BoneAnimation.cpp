@@ -108,7 +108,7 @@ namespace Library
 			XMVECTOR rotationQuaternion = XMQuaternionSlerp(rotationQuaternionOne, rotationQuaternionTwo, lerpValue);
 			XMVECTOR scale = XMVectorLerp(scaleOne, scaleTwo, lerpValue);
 
-			XMVECTOR rotationOrigin = XMLoadFloat4(&Vector4Helper::Zero);
+			static XMVECTOR rotationOrigin = XMLoadFloat4(&Vector4Helper::Zero);
 			XMStoreFloat4x4(&transform, XMMatrixAffineTransformation(scale, rotationOrigin, rotationQuaternion, translation));
 		}
 	}

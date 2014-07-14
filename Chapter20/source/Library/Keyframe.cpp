@@ -45,7 +45,7 @@ namespace Library
 
 	XMMATRIX Keyframe::Transform() const
 	{
-		XMVECTOR rotationOrigin = XMLoadFloat4(&Vector4Helper::Zero);
+		static XMVECTOR rotationOrigin = XMLoadFloat4(&Vector4Helper::Zero);
 
 		return XMMatrixAffineTransformation(ScaleVector(), rotationOrigin, RotationQuaternionVector(), TranslationVector());
 	}
