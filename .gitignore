@@ -1,40 +1,137 @@
 *.sdf
-Chapter14/build/Debug/
-Chapter14/source/CubeDemo/Debug/
-Chapter14/source/Library/Debug/
-Chapter14/source/TriangleDemo/Debug/
-Chapter14/content/
-Chapter14/build/Rendering.opensdf
-Chapter14/build/Rendering.sdf
-Chapter14/lib/Libraryd.lib
-Chapter17/build/Rendering.sdf
+*.opensdf
 external/Effects11/source/Bin/Desktop_2013/
+
+Chapter4/Visual Studio/build/Debug/
+Chapter4/Visual Studio/build/Release/
+Chapter4/Visual Studio/content/
+Chapter4/Visual Studio/lib/
+Chapter4/Visual Studio/source/*/Debug/
+Chapter4/Visual Studio/source/*/Release/
+
+Chapter5/Visual Studio/build/Debug/
+Chapter5/Visual Studio/build/Release/
+Chapter5/Visual Studio/content/
+Chapter5/Visual Studio/lib/
+Chapter5/Visual Studio/source/*/Debug/
+Chapter5/Visual Studio/source/*/Release/
+
+Chapter6/Visual Studio/build/Debug/
+Chapter6/Visual Studio/build/Release/
+Chapter6/Visual Studio/content/
+Chapter6/Visual Studio/lib/
+Chapter6/Visual Studio/source/*/Debug/
+Chapter6/Visual Studio/source/*/Release/
+
+Chapter7/Visual Studio/build/Debug/
+Chapter7/Visual Studio/build/Release/
+Chapter7/Visual Studio/content/
+Chapter7/Visual Studio/lib/
+Chapter7/Visual Studio/source/*/Debug/
+Chapter7/Visual Studio/source/*/Release/
+
+Chapter8/Visual Studio/build/Debug/
+Chapter8/Visual Studio/build/Release/
+Chapter8/Visual Studio/content/
+Chapter8/Visual Studio/lib/
+Chapter8/Visual Studio/source/*/Debug/
+Chapter8/Visual Studio/source/*/Release/
+
+Chapter9/Visual Studio/build/Debug/
+Chapter9/Visual Studio/build/Release/
+Chapter9/Visual Studio/content/
+Chapter9/Visual Studio/lib/
+Chapter9/Visual Studio/source/*/Debug/
+Chapter9/Visual Studio/source/*/Release/
+
+Chapter10/build/Debug/
+Chapter10/build/Release/
+Chapter10/content/
+Chapter10/lib/
+Chapter10/source/*/Debug/
+Chapter10/source/*/Release/
+
+Chapter11/build/Debug/
+Chapter11/build/Release/
+Chapter11/content/
+Chapter11/lib/
+Chapter11/source/*/Debug/
+Chapter11/source/*/Release/
+
 Chapter12/build/Debug/
 Chapter12/build/Release/
 Chapter12/content/
 Chapter12/lib/
-Chapter12/source/Game/Debug/
-Chapter12/source/Game/Release/
-Chapter12/source/Library/Debug/
-Chapter12/source/Library/Release/
+Chapter12/source/*/Debug/
+Chapter12/source/*/Release/
+
+Chapter13/build/Debug/
+Chapter13/build/Release/
+Chapter13/content/
+Chapter13/lib/
+Chapter13/source/*/Debug/
+Chapter13/source/*/Release/
+
+Chapter14/build/Debug/
+Chapter14/build/Release/
+Chapter14/content/
+Chapter14/lib/
+Chapter14/source/*/Debug/
+Chapter14/source/*/Release/
 
 Chapter15/build/Debug/
 Chapter15/build/Release/
 Chapter15/content/
 Chapter15/lib/
-Chapter15/source/Game/Debug/
-Chapter15/source/Game/Release/
-Chapter15/source/Library/Debug/
-Chapter15/source/Library/Release/
+Chapter15/source/*/Debug/
+Chapter15/source/*/Release/
+
+Chapter16/build/Debug/
+Chapter16/build/Release/
+Chapter16/content/
+Chapter16/lib/
+Chapter16/source/*/Debug/
+Chapter16/source/*/Release/
+
+Chapter17/build/Debug/
+Chapter17/build/Release/
+Chapter17/content/
+Chapter17/lib/
+Chapter17/source/*/Debug/
+Chapter17/source/*/Release/
 
 Chapter18/build/Debug/
 Chapter18/build/Release/
 Chapter18/content/
 Chapter18/lib/
-Chapter18/source/Game/Debug/
-Chapter18/source/Game/Release/
-Chapter18/source/Library/Debug/
-Chapter18/source/Library/Release/
-Chapter8/Visual Studio/build/Debug/
-Chapter18/source/ColorFilteringDemo/Debug/
-*.opensdf
+Chapter18/source/*/Debug/
+Chapter18/source/*/Release/
+
+Chapter19/build/Debug/
+Chapter19/build/Release/
+Chapter19/content/
+Chapter19/lib/
+Chapter19/source/*/Debug/
+Chapter19/source/*/Release/
+
+Chapter20/build/Debug/
+Chapter20/build/Release/
+Chapter20/content/
+Chapter20/lib/
+Chapter20/source/*/Debug/
+Chapter20/source/*/Release/
+
+Chapter21/build/Debug/
+Chapter21/build/Release/
+Chapter21/content/
+Chapter21/lib/
+Chapter21/source/*/Debug/
+Chapter21/source/*/Release/
+
+Chapter22/build/Debug/
+Chapter22/build/Release/
+Chapter22/content/
+Chapter22/lib/
+Chapter22/source/*/Debug/
+Chapter22/source/*/Release/
+

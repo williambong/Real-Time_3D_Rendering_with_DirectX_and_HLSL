@@ -133,7 +133,7 @@ namespace Rendering
 		mPointLights.push_back(pointLight);
 		mProxyModels.push_back(proxyModel);
 
-		for (int i = 0; i < mPointLights.size(); i++)
+		for (std::vector<PointLight*>::size_type i = 0; i < mPointLights.size(); i++)
 		{
 			mProxyModels[i]->SetPosition(mPointLights[i]->Position());
 		}
@@ -186,7 +186,7 @@ namespace Rendering
 		mMaterial->ColorTexture() << mTextureShaderResourceView;
 		mMaterial->CameraPosition() << mCamera->PositionVector();
 
-		for (int i = 0; i < mPointLights.size(); i++)
+		for (std::vector<PointLight*>::size_type i = 0; i < mPointLights.size(); i++)
 		{
 			PointLight* pointLight = mPointLights[i];
 
