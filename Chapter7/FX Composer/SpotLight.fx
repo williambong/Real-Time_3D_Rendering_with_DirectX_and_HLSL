@@ -133,7 +133,7 @@ VS_OUTPUT vertex_shader(VS_INPUT IN)
 
 float4 pixel_shader(VS_OUTPUT IN) : SV_Target
 {
-	float4 OUT = (float)0;
+	float4 OUT = (float4)0;
 	
 	float3 lightDirection = normalize(LightPosition - IN.WorldPosition);   
     float3 viewDirection = normalize(CameraPosition - IN.WorldPosition);
