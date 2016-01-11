@@ -220,7 +220,7 @@ namespace Rendering
 		inputLayout = mShadowMappingMaterial->InputLayouts().at(pass);
 		direct3DDeviceContext->IASetInputLayout(inputLayout);
 
-		// Draw teapot model
+		// Draw plane model
 		stride = mShadowMappingMaterial->VertexSize();
 		direct3DDeviceContext->IASetVertexBuffers(0, 1, &mPlanePositionUVNormalVertexBuffer, &stride, &offset);
 		direct3DDeviceContext->IASetIndexBuffer(mPlaneIndexBuffer, DXGI_FORMAT_R32_UINT, 0);
